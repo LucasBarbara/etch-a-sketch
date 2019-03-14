@@ -4,4 +4,4 @@ Project built as a part of the **Odin Project** [curriculum](https://www.theodin
 
 ***
 
-You can see it in action here: . 
+You can see it in action here: https://lucasbarbara.github.io/etch-a-sketch/. 
