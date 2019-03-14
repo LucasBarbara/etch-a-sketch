@@ -4,6 +4,7 @@ const container = document.querySelector('.container');
 
 const button = document.querySelector('#clearGrid');
 
+const btn = document.querySelector('#randomColor');
 
 drawGrid(gridSize);
 
@@ -31,11 +32,26 @@ function newGrid() {
 
 function paint() {
   const squares = document.querySelectorAll('.content');
-
+  
   squares.forEach((square) => {
 
     square.addEventListener('mouseover', (e) => {
       square.style.backgroundColor = 'black';
+      let opacity = Number(square.style.opacity); 
+      opacity += 0.1;
+      square.style.opacity = opacity;
+    })
+  })
+
+}
+
+function paintRandom() {
+  const squares = document.querySelectorAll('.content');
+
+  squares.forEach((square) => {
+
+    square.addEventListener('mouseover', (e) => {
+      square.style.backgroundColor = random_bg_color();
     })
   })
 
@@ -46,4 +62,14 @@ function gridTemplate(x) {
   container.style.gridTemplateColumns = "repeat(" + x + ", 1fr)";
 }
 
+function random_bg_color() {
+  let x = Math.floor(Math.random() * 256);
+  let y = Math.floor(Math.random() * 256);
+  let z = Math.floor(Math.random() * 256);
+  return bgColor = "rgb(" + x + "," + y + "," + z + ")";
+  }
+
 button.addEventListener('click', newGrid);
+
+btn.addEventListener('click', paintRandom);
+
