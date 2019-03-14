@@ -35,7 +35,7 @@ function paint() {
   squares.forEach((square) => {
 
     square.addEventListener('mouseover', (e) => {
-      square.style.backgroundColor = 'blue';
+      square.style.backgroundColor = 'black';
     })
   })
 

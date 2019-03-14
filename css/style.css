@@ -5,10 +5,13 @@ body {
 
 button {
 
-  background-color: bisque;
+  background-color: #04202c;
   border: none;
   border-radius: 5px;
+  color: lightgrey;
   padding: 1em;
+  font-size: 1.1rem;
+  font-weight: 600;
   width: 20vw;
 }
 
@@ -19,7 +22,7 @@ header {
 }
 .container {
 
-  border: 1px solid red;
+  border: 3px solid #32384d;
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(16, 1fr);
@@ -30,7 +33,8 @@ header {
 
 .content {
 
-  border: 1px solid blue;
+  border: 1px solid rgba(210, 210, 250, 0.25);
 
 }
 
+/* #217ca3 */
